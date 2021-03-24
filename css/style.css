@@ -54,9 +54,11 @@ nav a {
   background-color: black;
   display: none;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
+  position: relative;
   
+  border: 1px solid white;
 
 
 }
@@ -64,8 +66,47 @@ nav a {
   width: 1.5rem;
   height: 0.2rem;
   background-color: #2f584b;
-  border-radius: 10%;
+  border-radius: 20%;
   
+  
+}
+.first  {
+  animation-name: move;
+  animation-timing-function: ease-in;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  animation-iteration-count: 2;
+  position: absolute;
+}
+.secend {
+  animation-name: move-secend;
+  animation-timing-function: ease-in;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  animation-iteration-count: 2;
+  position: absolute;
+}
+.thirth {
+  display: none;
+}
+@keyframes move-secend{
+  from {
+    transform: rotate(-60deg );
+  }
+  to {
+    transform: rotate(45deg );
+  }
+
+}
+@keyframes move {
+  from {
+    transform: rotate(45deg );
+  }
+  to {
+    transform: rotate(-60deg );
+  }
 }
 
 /*finish nav*/
