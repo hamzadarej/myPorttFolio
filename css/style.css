@@ -13,7 +13,7 @@ html {
 /*start nav*/
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-direction: row;
   border: 1px solid black;
@@ -51,24 +51,26 @@ nav a {
 /*finish nav*/
 /*start main*/
 .container {
-  padding: 0px 100px 0px 100px;
-  border: 1px solid wheat;
+  padding: 0 100px;
   width: 100%;
   height: 92vh;
 }
 .info-section {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: row;
   align-items: center;
   height: 100%;
+  
+  
 }
 .left-side {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  
 
-  border: 1px solid white;
+
   height: 40%;
   width: 20%;
   font-size: 2.5rem;
@@ -76,10 +78,27 @@ nav a {
   cursor: context-menu;
 }
 .right-side {
-  border: 1px solid white;
+  
   height: 40%;
-  width: 20%;
+  width: 25%;
+  text-align: center;
+}
+.right-side img {
+  height: 35vh;
+  width: 20vw;
+  background-color:black;
+  border-radius: 50%;
 }
 .nameInMain {
   color: #087a61;
+  font-family: "Lobster", cursive;
 }
+.skills-section,.mywork-section,.gallery-section {
+  width: 100%;
+  height: 100vh;
+  border: 1px white solid;
+  
+}
+
+  
+
