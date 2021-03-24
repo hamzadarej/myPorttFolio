@@ -48,6 +48,26 @@ nav a {
 .nameNav {
   font-size: x-large;
 }
+.hamburger-menu {
+  height: 2rem;
+  width: 2rem;
+  background-color: black;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  
+
+
+}
+.kid {
+  width: 1.5rem;
+  height: 0.2rem;
+  background-color: #2f584b;
+  border-radius: 10%;
+  
+}
+
 /*finish nav*/
 /*start main*/
 .container {
@@ -97,7 +117,17 @@ nav a {
   width: 100%;
   height: 100vh;
   border: 1px white solid;
-  
+}
+@media only screen and (max-width: 1024px) {
+  .container {
+    padding: 0;
+  }
+  .rightNav {
+    display: none;
+}
+  .hamburger-menu {
+    display: flex;
+  }
 }
 
   
