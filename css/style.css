@@ -16,7 +16,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
-  border: 1px solid black;
+  border: 1px solid white;
   height: 8vh;
   width: 100%;
   color: gray;
@@ -29,9 +29,11 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 30%;
+  width: 60%;
   height: 3rem;
   list-style: none;
+  flex-direction: row;
+  
 }
 nav a {
   color: gray;
@@ -43,6 +45,14 @@ nav a {
 }
 .rightNav :hover {
   color: #2f584b;
+}
+.right-sidenav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  
+  width: 50%;
+
 }
 .nameNav {
   font-size: x-large;
@@ -132,6 +142,9 @@ nav a {
 .left-side input {
   width: 10rem;
   border: 2px  ;
+  height: 2rem;
+  border: 3px solid #087a61;
+  background-color: transparent;
   
 }
 .right-side {
@@ -140,10 +153,11 @@ nav a {
   text-align: center;
 }
 .right-side img {
-  height: 35vh;
-  width: 20vw;
+  height: 40vh;
+  width: 25vw;
   background-color: black;
   border-radius: 50%;
+  opacity: 0.7;
 }
 .nameInMain,.left-side input {
   color: #087a61;
@@ -160,15 +174,24 @@ nav a {
   .container {
     padding: 0;
   }
-  .rightNav {
+  .rightNav  {
     display: none;
+    height: 60vh;
+    width: 20%;
+    border: 1px solid white;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    right: 1.5rem;
+    top: 4rem;
+    
   }
+  
+  .rightNav li{
+    border: 1px solid white;
+  }
+  
   .hamburger-menu {
-    display: flex;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  .rightNav {
     display: flex;
   }
 }
