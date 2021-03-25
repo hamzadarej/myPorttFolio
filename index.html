@@ -1,58 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/fontawesome-free-5.15.2-web/css/fontAwesome.css">
+  </head>
+  <body>
     <header>
-        <nav>
-            <div class="nameNav">Hamza Darej</div>
+      <nav>
+        <div class="nameNav">Hamza Darej</div>
 
-            <div class="right-sidenav">
-            
-                <div  class="hamburger-menu" id="menuBox">
-                <div class="first kid"></div>
-                <div class="secend kid"></div>
-                <div class="thirth kid"></div>
-                 </div>
-             <ul class="rightNav">
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#mywork">My Work</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                
-            </ul>
+        <div class="right-sidenav">
+          <div class="hamburger-menu" id="menuBox">
+            <div class="first kid"></div>
+            <div class="secend kid"></div>
+            <div class="thirth kid"></div>
+          </div>
+          <ul class="rightNav">
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#mywork">My Work</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+          </ul>
         </div>
-        </nav>
+      </nav>
     </header>
     <main class="container">
-  <section class="info-section">
-      <h1 class="left-side">
+      <section class="info-section" id="about">
+        <h1 class="left-side">
           <span>Hey,</span>
           <span>I'm <span class="nameInMain">Hamza</span>,</span>
           <span>Web Developer.</span>
-          <input type="button" value="Contact Me">
-      </h1>
-      <div class="right-side"><img src="img/4.jpeg" alt="profilImg"></div>
+          <input type="button" value="Contact Me" />
+          <span ><a href=""><i class="fas fa-at"></i></a>
+            <a href=""><i class="fab fa-github"></i></a>
+        </span>
+        </h1>
 
-  </section>
+        <div class="right-side"><img src="img/4.jpeg" alt="profilImg" /></div>
+      </section>
 
+      <section class="skills-section" id="skills">
+          <div class="used">
+             
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+            <i class="fab fa-js-square"></i>
 
+          </div>
+          <div class="toLearn">
+            <i class="fab fa-bootstrap"></i>
+            <i class="fab fa-sass"></i>
+            <i class="fab fa-react"></i>
+          </div>
 
-  <section class="skills-section" id="skills"></section>
-  <section class="mywork-section" id="mywork"></section>
-  <section class="gallery-section" id="gallery"></section>
+      </section>
 
+      <section class="mywork-section" id="mywork"></section>
+      <section class="gallery-section" id="gallery"></section>
     </main>
-    <footer>
-
-    </footer><script src="script/index.js"></script>
-</body>
-
+    <footer></footer>
+    <script src="script/index.js"></script>
+  </body>
 </html>
