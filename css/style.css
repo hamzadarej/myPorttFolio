@@ -180,8 +180,51 @@ h1 i {
 .gallery-section {
   width: 100%;
   height: 100vh;
-  border: 1px white solid;
+  
+  display: flex;
+  align-items: center; 
+  font-family: "Lobster", cursive;
+  font-size: 20px;
+  color: gray;
 }
+.skills-section {
+  justify-content: space-around;
+  flex-direction: column;
+  
+}
+.used ,.toLearn {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid white;
+  width: 50%;
+}
+.mywork-section {
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+.mywork-img {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+  height: 80vh;
+  background-color: black;
+  position: relative;
+  
+
+}
+.mywork-img img {
+  width: 30rem;
+  height: 18rem;
+  padding: 20px;
+  box-shadow: 5px 5px 5px 5px #087a61;
+}
+
+
 
 
 
