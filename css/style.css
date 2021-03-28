@@ -44,6 +44,7 @@ nav:hover {
   height: 3rem;
   list-style: none;
   flex-direction: row;
+  
 }
 nav a {
   color: gray;
@@ -148,7 +149,7 @@ nav a {
 .info-section img {
   position: absolute;
   opacity: 0.2;
-  width: 80vw;
+  width: 100vw;
   height: 100vh;
   
 }
@@ -249,12 +250,12 @@ h1 i {
   position: absolute;
   bottom: 15rem;
   right: 8rem;
-  animation-duration: 3s;
-  animation-delay: s;
+  animation-duration: 2s;
+  
   animation-timing-function: ease-in-out;
   animation-name: move-right;
   animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 3;
   animation-play-state: running;
   animation-direction: normal;
 }
@@ -269,7 +270,33 @@ h1 i {
 
     opacity: 1;
   }
+  0% {
+    top: 0;
+
+  }
+  15% {
+    top:10rem;
+  }
+  30% {
+    top:15rem
+  }
+ 45% {
+   top: 30rem;
+ }
+ 60% {
+  top: 45rem;
 }
+80% {
+  top: 50rem;
+}
+100% {
+  top: 45rem;
+}
+   }
+
+  
+
+
 
 .used,
 .toLearn {
@@ -353,12 +380,19 @@ h1 i {
   height: 2rem;
   width: 20rem;
   color: white;
-  background-color: transparent;
+  background-color:transparent;
+  border: #087a61;
+  border: gray 1px solid;
+}
+.contact-section ::placeholder {
+  color: #087a61;
+  border: white;
 }
 .contact-section form input:hover {
   height: 2.5rem;
   width: 21rem;
   font-size: large;
+  
 }
 .contact-section h1 {
   font-size: 35px;
