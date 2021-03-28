@@ -6,6 +6,7 @@
 body {
   width: 100vw;
   background-color: black;
+  position: relative;
 }
 html {
   scroll-behavior: smooth;
@@ -16,6 +17,11 @@ nav {
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 12;
 
   height: 8vh;
   width: 100%;
@@ -178,7 +184,7 @@ h1 i {
   border-radius: 50%;
   opacity: 0.7;
 
-  box-shadow: black 8px 8px 8px 8px;
+  box-shadow: #2f584b 2px 2px 2px 2px;
 }
 .nameInMain,
 .left-side input {
@@ -187,7 +193,6 @@ h1 i {
 }
 .skills-section,
 .mywork-section,
-.gallery-section,
 .contact-section {
   width: 100%;
   height: 100vh;
@@ -230,24 +235,24 @@ h1 i {
   position: absolute;
   bottom: 15rem;
   right: 8rem;
-  animation-duration: 5s;
-  animation-delay: 5s;
+  animation-duration: 3s;
+  animation-delay: s;
   animation-timing-function: ease-in-out;
   animation-name: move-right;
   animation-fill-mode: forwards;
-  animation-iteration-count: 3;
+  animation-iteration-count: infinite;
   animation-play-state: running;
   animation-direction: normal;
 }
 @keyframes move-right {
   from {
     color: #087a61;
-    transform: rotate(0deg);
+
     opacity: 0.5;
   }
   to {
     color: white;
-    transform: rotate(180deg);
+
     opacity: 1;
   }
 }
@@ -258,10 +263,32 @@ h1 i {
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
-  border: 1px solid white;
+  border: 1px solid gray;
   width: 50%;
   padding: 10px;
 }
+#HtmlLogo {
+  color: orangered;
+}
+#cssLogo {
+  color: #2965f1;
+}
+#jsLogo {
+  color: #f0db4f;
+}
+#bootstrapLogo {
+  color: #553c7b;
+}
+#sassLogo {
+  color: #cd6799;
+}
+#reactLogo {
+  color: #61dbfb;
+}
+#nodejsLogo {
+  color: #3c873a;
+}
+
 .mywork-section {
   justify-content: space-around;
   flex-direction: column;
@@ -281,7 +308,35 @@ h1 i {
   width: 30rem;
   height: 18rem;
   padding: 20px;
-  box-shadow: 5px 5px 5px 5px black;
+  box-shadow: 5px 5px 5px 5px #2f584b;
+
+  z-index: 0;
+}
+.mywork-img img:hover {
+  opacity: 0.3;
+  transition: ease-in-out 2s;
+}
+
+.contact-section {
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.contact-section form {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 15rem;
+  width: 23rem;
+  border: #2f584b 1px solid;
+  padding: 8px;
+  align-items: center;
+}
+.contact-section form input {
+  height: 2rem;
+  width: 20rem;
+}
+.contact-section h1 {
+  font-size: 35px;
 }
 
 @media only screen and (max-width: 1024px) {

@@ -16,7 +16,7 @@
   <body>
     <header>
       <nav>
-        <div class="nameNav">Hamza Darej</div>
+        <div class="nameNav">Portfolio</div>
 
         <div class="right-sidenav">
           <div class="hamburger-menu" id="menuBox">
@@ -28,7 +28,6 @@
             <li><a href="#about">About Me</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#mywork">My Work</a></li>
-            <li><a href="#gallery">Gallery</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
@@ -55,17 +54,17 @@
           <h1>Skills</h1>
           <div class="used">
              <h2>Used : </h2>
-            <i class="fab fa-html5 fa-5x"></i>
-            <i class="fab fa-css3-alt fa-5x"></i>
-            <i class="fab fa-js-square fa-5x"></i>
+            <i class="fab fa-html5 fa-5x" id="HtmlLogo"></i>
+            <i class="fab fa-css3-alt fa-5x" id="cssLogo"></i>
+            <i class="fab fa-js-square fa-5x" id="jsLogo"></i>
 
           </div>
           <div class="toLearn">
               <h2>to Learn :</h2>
-            <i class="fab fa-bootstrap fa-5x"></i>
-            <i class="fab fa-sass fa-5x"></i>
-            <i class="fab fa-react fa-5x"></i>
-            <i class="fab fa-node-js fa-5x"></i>
+            <i class="fab fa-bootstrap fa-5x" id="bootstrapLogo"></i>
+            <i class="fab fa-sass fa-5x" id="sassLogo"></i>
+            <i class="fab fa-react fa-5x" id="reactLogo"></i>
+            <i class="fab fa-node-js fa-5x"id="nodejsLogo"></i>
           </div>
 
       </section>
@@ -73,7 +72,7 @@
       <section class="mywork-section" id="mywork">
           <h1>My Work Using Html&Css</h1>
           <div class="mywork-img">
-              <img src="img/Screenshot_20210325_112911.png" alt="youtube-clone">
+              <a href="https://hamzadarej.github.io/Youtube-WebSite/"><img src="img/Screenshot_20210325_112911.png" alt="youtube-clone"></a>
               <img src="img/Screenshot_20210325_112951.png" alt="">
               <img src="img/Screenshot_20210325_113038.png" alt="">
               <img src="img/Screenshot_20210325_113112.png" alt="">
@@ -81,8 +80,15 @@
           </div>
 
       </section>
-      <section class="gallery-section" id="gallery"></section>
-      <section class="contact-section" id="contact"></section>
+      
+      <section class="contact-section" id="contact">
+        <h1>Let we get in contact</h1>
+        <form action="contact-me">
+          <input type="text" placeholder="Enter your Name">
+          <input type="text"  placeholder="Enter your Email">
+          <input type="text"  placeholder="Enter your Message">
+          <input type="button" value="Send">
+      </section>
     </main>
     <footer></footer>
     <script src="script/index.js"></script>
