@@ -8,3 +8,13 @@ document.querySelector("#menuBox").addEventListener("click", () => {
     document.querySelector(".rightNav ").style.cssText = "display:none ;";
   }
 });
+let click = false;
+document.querySelector("#moreinfo").addEventListener("click", () => {
+  click = !click;
+  console.log(click);
+  if (click) {
+    document.querySelector(".moreText ").style.cssText = "display:flex;";
+  } else {
+    document.querySelector(".moreText ").style.cssText = "display:none ;";
+  }
+});

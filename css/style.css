@@ -133,7 +133,6 @@ nav a {
   padding: 0 100px;
   width: 100%;
   height: 92vh;
-  
 }
 
 .info-section {
@@ -144,15 +143,14 @@ nav a {
   height: 100%;
   width: inherit;
   position: relative;
-  
-  
+  width: 100%;
 }
 .info-section img {
   position: absolute;
   opacity: 0.2;
   width: 80vw;
   height: 100vh;
-
+  
 }
 .left-side {
   display: flex;
@@ -165,7 +163,14 @@ nav a {
   font-size: 2.5rem;
   color: snow;
   cursor: context-menu;
-  opacity: 1;
+  
+}
+
+.aboutMEText {
+  font-size: 1.5rem;
+}
+.moreText {
+  display: none;
 }
 .left-side input {
   width: 10rem;
@@ -187,7 +192,6 @@ h1 i {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: ;
 }
 .right-side img {
   height: 40vh;
@@ -195,8 +199,6 @@ h1 i {
   background-color: black;
   border-radius: 50%;
   opacity: 0.7;
-
-  box-shadow: #2f584b 2px 2px 2px 2px;
 }
 .nameInMain,
 .left-side input {
@@ -320,7 +322,7 @@ h1 i {
   width: 30rem;
   height: 18rem;
   padding: 20px;
-  box-shadow: 5px 5px 5px 5px #2f584b;
+  box-shadow: 1px 1px 1px 1px #2f584b;
 
   z-index: 0;
 }
@@ -330,27 +332,28 @@ h1 i {
 }
 
 .contact-section {
-  justify-content: space-evenly;
+  display: flex;
+  justify-content: space-between;
   flex-direction: column;
+
+  text-align: center;
 }
 .contact-section form {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  height: 15rem;
+  height: 20rem;
   width: 23rem;
-  border: #2f584b 1px solid;
+  border: gray 1px solid;
   padding: 8px;
   align-items: center;
   color: white;
-  
 }
 .contact-section form input {
   height: 2rem;
   width: 20rem;
   color: white;
   background-color: transparent;
-  
 }
 .contact-section form input:hover {
   height: 2.5rem;
@@ -360,21 +363,70 @@ h1 i {
 .contact-section h1 {
   font-size: 35px;
 }
+footer {
+  width: 35vw;
+  height: 6rem;
+  
+  display: flex;
+  justify-content: center;
+
+}
+.footerLogos {
+  width: 30vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#facebook {
+  color: blue;
+}
+#twitter {
+  color: #1DA1F2;
+}
+#instagram { width:60px; height:60px;
+  background: #f09433; 
+background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+
+  }
+
 
 @media only screen and (max-width: 1024px) {
   .container {
     padding: 0;
+    
   }
+  body {
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+  }
+
   .rightNav {
     display: none;
     height: 60vh;
-    width: 20%;
-    border: 1px solid white;
+    width: 30%;
+    
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     position: absolute;
-    right: 1.5rem;
-    top: 4rem;
+    right:rem;
+    top: 120%;
+  }
+  nav {
+    justify-content: space-between;
+    width: 100vw;
+  }
+  .rightNav li {
+    width: 6rem;
+    text-align: center;
+    border-radius: 15px;
+   
+  }
+  .right-sidenav {
+    justify-content: center;
+   
   }
 
   .rightNav li {
@@ -384,4 +436,31 @@ h1 i {
   .hamburger-menu {
     display: flex;
   }
+  .mywork-img img {
+    width: 10rem;
+    height: 9rem;
+    padding: 3px;
+  }
+  .used,
+.toLearn {
+  padding: 0px;
+  width: 80%;
+}
+.used i ,.toLearn i {
+  font-size: 28px;
+}
+footer {
+  text-align: center;
+  
+  width: 20rem;
+}
+.footerLogos {
+  
+  width: 20rem;
+  font-size: 12px;
+}
+#instagram { width:40px; height:36px;}
+#coding-img {
+  display: none;
+}
 }
