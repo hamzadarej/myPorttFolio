@@ -158,6 +158,7 @@ nav a {
 }
 .info-section p {
   font-size: 15px;
+  
 }
 .left-side {
   display: flex;
@@ -166,12 +167,13 @@ nav a {
   align-items: left;
   z-index: 1;
   
+  
 
   height: 40%;
   width: 30%;
   font-size: 2.5rem;
   color: snow;
-  cursor: context-menu;
+  cursor: pointer;
   
 }
 
