@@ -250,7 +250,7 @@ h1 i {
   position: absolute;
   bottom: 15rem;
   right: 8rem;
-  animation-duration: 2s;
+  animation-duration: 3s;
   
   animation-timing-function: ease-in-out;
   animation-name: move-right;
@@ -271,7 +271,7 @@ h1 i {
     opacity: 1;
   }
   0% {
-    top: 0;
+    top: 5rem;
 
   }
   15% {
@@ -284,13 +284,13 @@ h1 i {
    top: 30rem;
  }
  60% {
-  top: 45rem;
+  top: 40rem;
 }
 80% {
-  top: 50rem;
+  top: 45rem;
 }
 100% {
-  top: 45rem;
+  top: 40rem;
 }
    }
 
@@ -329,6 +329,11 @@ h1 i {
 #nodejsLogo {
   color: #3c873a;
 }
+#linkedin {
+ 
+  color: #0077B5;
+  
+}
 
 .mywork-section {
   justify-content: space-around;
@@ -354,8 +359,11 @@ h1 i {
   z-index: 0;
 }
 .mywork-img img:hover {
-  opacity: 0.3;
+  
   transition: ease-in-out 2s;
+  width: 50rem;
+  height: 25rem;
+  padding: 5px;
 }
 
 .contact-section {
@@ -412,7 +420,7 @@ footer {
   align-items: center;
 }
 #facebook {
-  color: blue;
+  color: #4267B2;
 }
 #twitter {
   color: #1DA1F2;
