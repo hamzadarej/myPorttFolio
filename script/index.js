@@ -10,3 +10,9 @@ document.querySelector("#menuBox").addEventListener("click", () => {
 });
 
 
+let paragraph = document.querySelector("#moreText");
+let button = document.querySelector("#show");
+button.addEventListener("click", () => {
+  if (paragraph.style.display==="none") {paragraph.style.display = "flex";}
+  else {paragraph.style.display="none"}
+});

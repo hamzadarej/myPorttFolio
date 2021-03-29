@@ -33,7 +33,7 @@ nav {
 }
 nav:hover {
   background-color: #2f584b;
-  border: 1px solid white;
+ 
   transition: ease-in-out 2s;
 }
 .rightNav {
@@ -145,6 +145,9 @@ nav a {
   width: inherit;
   position: relative;
   width: 100%;
+  
+  
+ 
 }
 .info-section img {
   position: absolute;
@@ -153,11 +156,16 @@ nav a {
   height: 100vh;
   
 }
+.info-section p {
+  font-size: 15px;
+}
 .left-side {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: left;
+  z-index: 1;
+  
 
   height: 40%;
   width: 30%;
@@ -195,8 +203,8 @@ h1 i {
   justify-content: center;
 }
 .right-side img {
-  height: 40vh;
-  width: 25vw;
+  height: 35vh;
+  width: 20vw;
   background-color: black;
   border-radius: 50%;
   opacity: 0.7;
@@ -503,6 +511,9 @@ footer {
 }
 #instagram { width:40px; height:36px;}
 #coding-img {
+  display: none;
+}
+.codeAni-left ,.codeAni-right {
   display: none;
 }
 }
