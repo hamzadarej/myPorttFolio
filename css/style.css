@@ -80,7 +80,7 @@ nav a {
   align-items: center;
   position: relative;
 
-  border: 1px solid white;
+  border: 1px solid gray;
 }
 
 .kid {
@@ -95,7 +95,7 @@ nav a {
   animation-duration: 3s;
   animation-fill-mode: forwards;
   animation-play-state: running;
-  animation-iteration-count: 2;
+  animation-iteration-count: infinite;
   position: absolute;
 }
 .secend {
@@ -104,7 +104,7 @@ nav a {
   animation-duration: 3s;
   animation-fill-mode: forwards;
   animation-play-state: running;
-  animation-iteration-count: 2;
+  animation-iteration-count: infinite;
   position: absolute;
 }
 .thirth {
@@ -158,7 +158,11 @@ nav a {
 }
 .info-section p {
   font-size: 15px;
+
   
+}
+.info-section p:hover {
+font-size: large;
 }
 .left-side {
   display: flex;
@@ -175,6 +179,9 @@ nav a {
   color: snow;
   cursor: pointer;
   
+}
+#show {
+  color: #087a61;
 }
 
 .aboutMEText {
@@ -449,6 +456,10 @@ background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75
     padding: 0;
     
   }
+  .left-side {
+    width: 50%;
+  }
+  
   body {
     width: 100vw;
     padding: 0;
