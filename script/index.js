@@ -3,9 +3,9 @@ document.querySelector("#menuBox").addEventListener("click", () => {
   clicked = !clicked;
   console.log(clicked);
   if (clicked) {
-    document.querySelector(".rightNav ").style.cssText = "display:flex;";
+    document.querySelector(".rightNav ").style.cssText = "display:none;";
   } else {
-    document.querySelector(".rightNav ").style.cssText = "display:none ;";
+    document.querySelector(".rightNav ").style.cssText = "display:flex ;";
   }
 });
 
